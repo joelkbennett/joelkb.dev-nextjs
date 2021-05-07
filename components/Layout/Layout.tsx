@@ -8,35 +8,34 @@ import { useSetRecoilState } from 'recoil';
 import * as Window from '../../state/window';
 
 export default function Layout({ children }: React.PropsWithChildren<{}>) {
-  const setScrollPosition = useSetRecoilState(Window.scrollPositionState);
+  const setScrollState = useSetRecoilState(Window.scrollPositionState);
   const setViewport = useSetRecoilState(Window.viewportState);
 
   const isInitialLoad = React.useRef(true);
   const isTicking = React.useRef(false);
-  const lastKnownScrollPosition = React.useRef([0, 0]);
+  const lastKnownScrollPosition = React.useRef({ x: 0, y: 0 });
   const lastKnownViewportSize = React.useRef({ width: 0, height: 0 });
 
   React.useEffect(() => {
-    const handleScroll = (event) => {
-      if (event) {
-        console.log(event);
-        console.log('this should stop');
-        event.preventDefault();
-      }
+    const handleScroll = () => {
+      lastKnownScrollPosition.current = {
+        x: window.scrollX,
+        y: window.scrollY,
+      };
 
-      lastKnownScrollPosition.current = [window.scrollX, window.scrollY];
-      
       window.scrollTo(
-        lastKnownViewportSize.current[0],
-        lastKnownViewportSize.current[1],
+        lastKnownScrollPosition.current.x,
+        lastKnownScrollPosition.current.y,
       );
 
-      // if (!isTicking.current || isInitialLoad.current) {
-      //   window.requestAnimationFrame(() => {
-      //     setScrollPosition(lastKnownScrollPosition.current);
-      //     isTicking.current = false;
-      //   });
-      // }
+      if (!isTicking.current || isInitialLoad.current) {
+        window.requestAnimationFrame(() => {
+          setScrollState({
+            position: { ...lastKnownScrollPosition.current },
+          });
+          isTicking.current = false;
+        });
+      }
 
       isTicking.current = true;
     };
@@ -61,7 +60,7 @@ export default function Layout({ children }: React.PropsWithChildren<{}>) {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleWindowResize);
 
-    handleScroll(null);
+    handleScroll();
     handleWindowResize();
 
     isInitialLoad.current = false;

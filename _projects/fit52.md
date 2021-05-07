@@ -1,11 +1,12 @@
 ---
-title: "fit52 with Carrie Underwood"
-links: [{ title: 'fit52.com', url: 'https://fit52.com'}]
-description: "React Native"
+title: "fit52"
+links: [{ title: 'fit52.com', url: 'https://fit52.com'}, { title: 'App Store', url: 'https://apps.apple.com/ca/app/fit52-with-carrie-underwood/id1475006543'}, { title: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.creativelabs.fit52&hl=en_CA&gl=US'}]
+techStack: ["React Native", "Mobx-state-tree", "Laravel"]
+description: "\"Workouts to Tone Up & Get Fit\""
 images:
   - title: 'Some Project Image One'
     url: ''
   - title: 'Some Project Image Two'
     url: ''
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Fitness app featuring Carrie Underwood. Currently available for iOS and Android.

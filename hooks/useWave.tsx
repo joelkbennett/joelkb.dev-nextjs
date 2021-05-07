@@ -115,9 +115,8 @@ function animateWave(
     if (i < width / 2) {
       position.y = Math.abs(
         height / 2 +
-          Math.sin(waveConfig.length * i + increment * 10) *
-            ((waveConfig.amplitude * i) / 300) *
-            50,
+          Math.sin(waveConfig.length * i + increment * 0.1) *
+            ((waveConfig.amplitude * i) / 2),
       );
     } else {
       position.y = Math.abs(

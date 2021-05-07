@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import Layout from '../components/Layout/Layout';
-import utilStyles from '../styles/utils.module.css';
 import { getAllProjects } from '../lib/projects';
 import Link from 'next/link';
 import ProjectList from '../components/ProjectList/ProjectList';
+import WorkExperienceList from '../components/WorkExperienceList/WorkExperienceList';
+import SkillList from '../components/SkillList/SkillList';
 
 export default function Home({ projects }) {
   return (
@@ -11,9 +12,9 @@ export default function Home({ projects }) {
       <Head>
         <title>{'joelkb.dev'}</title>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <ProjectList projects={projects} />
-      </section>
+      <ProjectList projects={projects} />
+      <WorkExperienceList />
+      <SkillList />
     </Layout>
   );
 }

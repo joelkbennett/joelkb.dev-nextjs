@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: center;
   width: 100vw;
-  min-height: 1900px;
   z-index: -1;
   position: relative;
 }
@@ -13,14 +12,15 @@
   justify-content: center;
   position: fixed;
   overflow: hidden;
+  z-index: -1;
 }
 
 .inner {
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   padding: 80px 100px;
 }
