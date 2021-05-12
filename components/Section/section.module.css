@@ -1,21 +1,32 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0px 6em 10em 6em;
-
-}
-
-@media screen and (min-width: 960px) {
-  .wrapper {
-    flex-direction: row;
-  }
+  margin: 3em 6em 10em 6em;
 }
 
 .column {
-  flex: 1 1 20px;
-  align-items: left;
+  min-width: 100px;
 }
 
 .content {
-  padding: 0 0 0 6em;
+  padding-left: 0px;
+}
+
+@media screen and (min-width: 720px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .content {
+    padding-left: 120px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .content {
+    padding: 0 0 0 6em;
+  }
+
+  .column {
+    flex: 1 1 300px;
+  }
 }

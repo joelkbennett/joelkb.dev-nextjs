@@ -13,18 +13,37 @@
   position: fixed;
   overflow: hidden;
   z-index: -1;
+  top: 0;
+  left: -915px;
 }
 
 .inner {
   display: flex;
   justify-content: space-between;
-  /* position: fixed;
-  top: 0;
-  left: 0; */
+  flex-direction: column;
   width: 100%;
-  padding: 80px 100px;
+  padding: 2em 2em 2em 4.5em;
 }
 
 .links {
+  align-self: flex-end;
+}
 
+@media (min-width: 720px) {
+  .wave {
+    left: -700px;
+    top: 200px;
+  }
+}
+
+@media (min-width: 960px) {
+  .wave {
+    left: inherit;
+    top: inherit;
+  }
+
+  .inner {
+    flex-direction: row;
+    padding: 10em 5em;
+  }
 }

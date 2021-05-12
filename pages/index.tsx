@@ -2,8 +2,8 @@ import Head from 'next/head';
 import Layout from '../components/Layout/Layout';
 import { getAllProjects } from '../lib/projects';
 import Link from 'next/link';
+import Section from '../components/Section/Section';
 import ProjectList from '../components/ProjectList/ProjectList';
-import WorkExperienceList from '../components/WorkExperienceList/WorkExperienceList';
 import SkillList from '../components/SkillList/SkillList';
 
 export default function Home({ projects }) {
@@ -13,7 +13,26 @@ export default function Home({ projects }) {
         <title>{'joelkb.dev'}</title>
       </Head>
       <ProjectList projects={projects} />
-      <WorkExperienceList />
+      <Section title="Worked For">
+        <ul className={`list-flex`}>
+          <li>m56 Studios</li>
+          <li>The Coup Company</li>
+          <li>Overinteractive Media</li>
+          <li>AIDS Vancouver</li>
+          <li>Bang-On</li>
+        </ul>
+      </Section>
+      <Section title="Worked on projects for">
+        <ul className={`list-flex`}>
+          <li>Telus</li>
+          <li>Telus Fund</li>
+          <li>CBC</li>
+          <li>The Canada Games</li>
+          <li>Wattpad</li>
+          <li>Pivot Legal Society</li>
+          <li>The Vancouver Symphony Orchestra</li>
+        </ul>
+      </Section>
       <SkillList />
     </Layout>
   );

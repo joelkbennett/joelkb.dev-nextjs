@@ -97,7 +97,7 @@ export default function Project({
       //   backgroundImage:
       //     'linear-gradient(rgba(255,255,255,1), rgba(255,0,0,.1))',
       // }}
-      className={styles.wrapper}>
+      className={`${styles.wrapper}`}>
       <div className={styles.inner}>
         <div className={styles.number}>
           <p>{number}</p>
@@ -116,11 +116,9 @@ export default function Project({
             </div>
 
             {techStack && techStack.length > 0 && (
-              <ul className={styles.stack}>
+              <ul className={`${styles.stack} inline`}>
                 {techStack.map((item, index) => (
-                  <li className="inline" key={index}>
-                    {item}
-                  </li>
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
             )}

@@ -11,12 +11,15 @@ export default function SiteHeader() {
       <div className={styles.wave}>
         <Wave />
       </div>
-      <div className={styles.inner}>
-        <div>
-          <h1>Joel K Bennett</h1>
-          <h1>UX/UI design, React/React Native, Unity</h1>
-          <h1>Vancouver BC</h1>
-        </div>
+      <div className={`${styles.inner}`}>
+        <h1>
+          Joel K Bennett
+          <br />
+          UX/UI design, React/React Native, Unity
+          <br />
+          Vancouver BC
+          <br />
+        </h1>
 
         <section className={styles.links}>
           <a href="https://www.github.com/joelkbennett">github</a>
