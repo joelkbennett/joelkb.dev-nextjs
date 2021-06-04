@@ -21,7 +21,6 @@ jobs:
         run: doctl registry login --expiry-seconds 600
       - name: Tag image
         run:
-          docker tag joelkb-dev_nextjs \
-          registry.digitalocean.com/e11/joelkb-dev_nextjs:${{github.event.inputs.version }}
+          docker tag joelkb-dev_nextjs registry.digitalocean.com/e11/joelkb-dev_nextjs:${{github.event.inputs.version }}
       - name: Push image to DO Container Registry
         run: docker push registry.digitalocean.com/e11/joelkb-dev_nextjs:${{ github.event.inputs.version }}
