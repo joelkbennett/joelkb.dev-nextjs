@@ -24,12 +24,12 @@ export default function Home({ projects }) {
       </Section>
       <Section title="Worked on projects for">
         <ul className={`list-flex`}>
-          <li>Telus</li>
+          <li>StoryHive</li>
           <li>Telus Fund</li>
           <li>CBC</li>
-          <li>The Canada Games</li>
-          <li>Wattpad</li>
-          <li>Pivot Legal Society</li>
+          <li>The Canada Games Activity Challenge</li>
+          <li>Wattpad Presents</li>
+          <li>Pivot Legal Society (Hope in Shadows, The Pivot Foundation)</li>
           <li>The Vancouver Symphony Orchestra</li>
         </ul>
       </Section>
