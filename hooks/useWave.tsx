@@ -1,4 +1,3 @@
-import { auth } from 'firebase-admin';
 import * as React from 'react';
 import useWindowSize from './useViewport';
 
