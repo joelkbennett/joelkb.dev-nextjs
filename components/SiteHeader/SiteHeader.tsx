@@ -4,10 +4,10 @@ import Wave from '../Wave/Wave';
 import useViewport from '../../hooks/useViewport';
 
 export default function SiteHeader() {
-  const { width, height } = useViewport();
+  const { height } = useViewport();
 
   return (
-    <header className={styles.wrapper} style={{ height }}>
+    <header className={styles.wrapper} style={{ height: height || 1080 }}>
       <div className={styles.wave}>
         <Wave />
       </div>
