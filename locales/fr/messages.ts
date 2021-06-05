@@ -1,0 +1,1 @@
+/*eslint-disable*/export const messages={"404.description":"404.description"};
