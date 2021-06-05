@@ -107,7 +107,7 @@ export default function Project({
           <header>
             <h2>{title}</h2>
             <div>
-              <h4 className={styles.descriptionWrapper}>{description}</h4>
+              <h3 className={styles.descriptionWrapper}>{description}</h3>
             </div>
           </header>
           <section className={styles.body}>

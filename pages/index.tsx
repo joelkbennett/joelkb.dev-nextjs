@@ -11,6 +11,11 @@ export default function Home({ projects }) {
     <Layout>
       <Head>
         <title>{'joelkb.dev'}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Portfolio of work of Web Developer Joel K Bennett"></meta>
+        {/* <link rel="manifest" href="/manifest.json" /> */}
       </Head>
       <ProjectList projects={projects} />
       <Section title="Worked For">

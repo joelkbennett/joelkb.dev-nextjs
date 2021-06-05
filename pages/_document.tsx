@@ -14,11 +14,10 @@ class AppDocument extends Document {
   }
 
   render() {
-    console.log('what is happening??');
     return (
       <Html lang="en">
         <Head />
-        <body className="ohoho">
+        <body>
           <Main />
           <NextScript />
         </body>
