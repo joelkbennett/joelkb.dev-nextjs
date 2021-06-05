@@ -12,7 +12,7 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v2
       - name: Build image
-        run: docker build -t joelkb-dev_nextjs .
+        run: docker build -t joelkb-dev .
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
@@ -21,6 +21,6 @@ jobs:
         run: doctl registry login --expiry-seconds 600
       - name: Tag image
         run:
-          docker tag joelkb-dev_nextjs registry.digitalocean.com/e11/joelkb-dev_nextjs:${{github.event.inputs.version }}
+          docker tag joelkb-dev registry.digitalocean.com/e11/joelkb-dev
       - name: Push image to DO Container Registry
-        run: docker push registry.digitalocean.com/e11/joelkb-dev_nextjs:${{ github.event.inputs.version }}
+        run: docker push registry.digitalocean.com/e11/joelkb-dev
