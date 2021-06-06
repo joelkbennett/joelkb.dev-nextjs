@@ -22,6 +22,10 @@ jobs:
       - name: Tag image
         run:
           docker tag joelkb-dev registry.digitalocean.com/e11/joelkb-dev
+      - name: DigitalOcean Registry Prune
+        uses: PierreAndreis/do-registry-prune-tags@0.0.1
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       - name: Push image to DO Container Registry
         run: docker push registry.digitalocean.com/e11/joelkb-dev
       - name: Deploy DO app
