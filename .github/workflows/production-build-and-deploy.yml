@@ -24,3 +24,5 @@ jobs:
           docker tag joelkb-dev registry.digitalocean.com/e11/joelkb-dev
       - name: Push image to DO Container Registry
         run: docker push registry.digitalocean.com/e11/joelkb-dev
+      - name: Deploy DO app
+        run: doctl apps create-deployment ${{ secrets.DIGITALOCEAN_APP_ID }} --force-rebuild
