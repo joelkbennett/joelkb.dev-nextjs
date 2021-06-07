@@ -12,7 +12,7 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v2
       - name: Build image
-        run: docker build -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}${{ env.GITHUB_SHA }} -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:latest .
+        run: docker build -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:${{ env.GITHUB_SHA }} -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:latest .
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
