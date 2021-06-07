@@ -12,17 +12,16 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v2
       - name: Build image
-        run: docker build -t joelkb-dev .
+        run: docker build -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}${{ env.GITHUB_SHA }} -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:latest .
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       - name: Log in to Digital Ocean Container Registry
         run: doctl registry login --expiry-seconds 600
-      - name: Tag image
-        run:
-          docker tag joelkb-dev registry.digitalocean.com/e11/joelkb-dev
-      - name: Push image to DO Container Registry
-        run: docker push registry.digitalocean.com/e11/joelkb-dev
+      - name: Push image to DO Container Registry with unique tag
+        run: docker push ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:${{ env.GITHUB_SHA }}
+      - name: Push image to DO Container Registry with LATEST tag
+        run: docker push ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:latest
       - name: Deploy DO app
         run: doctl apps create-deployment ${{ secrets.DIGITALOCEAN_APP_ID }} --force-rebuild
