@@ -12,7 +12,7 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v2
       - name: Build image
-        run: docker build -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:${{ GITHUB_SHA }} -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:latest .
+        run: docker build -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:${{ github.sha }} -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:latest .
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
@@ -20,7 +20,7 @@ jobs:
       - name: Log in to Digital Ocean Container Registry
         run: doctl registry login --expiry-seconds 600
       - name: Push image to DO Container Registry with unique tag
-        run: docker push ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:${{ GITHUB_SHA }}
+        run: docker push ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:${{ github.sha }}
       - name: Push image to DO Container Registry with LATEST tag
         run: docker push ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:latest
       - name: Deploy DO app
