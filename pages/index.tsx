@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Section from '../components/Section/Section';
 import ProjectList from '../components/ProjectList/ProjectList';
 import SkillList from '../components/SkillList/SkillList';
+import { t } from '@lingui/macro';
 
 export default function Home({ projects }) {
   return (
@@ -45,7 +46,7 @@ export default function Home({ projects }) {
       <ProjectList projects={projects} />
       <Section title="Worked For">
         <ul className={`list-flex`}>
-          <li>m56 Studios</li>
+          <li>{t({ id: 'project.title.m56', message: 'm56 Studios' })}</li>
           <li>The Coup Company</li>
           <li>Overinteractive Media</li>
           <li>AIDS Vancouver</li>

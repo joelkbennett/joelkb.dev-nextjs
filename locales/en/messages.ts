@@ -1,1 +1,1 @@
-/*eslint-disable*/export const messages={"404.description":"Not found"};
+/*eslint-disable*/export const messages={"404.description":"Not found","project.title.m56":"m56 Studios"};
