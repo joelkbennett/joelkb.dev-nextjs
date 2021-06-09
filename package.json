@@ -11,6 +11,9 @@
     "lingui:compile": "lingui compile",
     "lingui": "lingui extract --clean --overwrite && lingui compile"
   },
+  "prisma": {
+    "schema": "src/prisma/schema.prisma"
+  },
   "dependencies": {
     "@lingui/react": "^3.9.0",
     "@prisma/client": "^2.24.1",
