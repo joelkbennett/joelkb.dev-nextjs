@@ -23,5 +23,7 @@ jobs:
         run: docker push ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:${{ github.sha }}
       - name: Push image to DO Container Registry with LATEST tag
         run: docker push ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:latest
+      - name: Run any new migrations
+        run: npx prisma migrate deploy
       - name: Deploy DO app
         run: doctl apps create-deployment ${{ secrets.DIGITALOCEAN_APP_ID }} --force-rebuild
