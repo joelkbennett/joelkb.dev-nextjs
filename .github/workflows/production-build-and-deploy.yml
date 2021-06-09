@@ -11,19 +11,28 @@ jobs:
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
+
       - name: Build image
         run: docker build -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:${{ github.sha }} -t ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:latest .
+
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+
       - name: Log in to Digital Ocean Container Registry
         run: doctl registry login --expiry-seconds 600
+
       - name: Push image to DO Container Registry with unique tag
         run: docker push ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:${{ github.sha }}
+
       - name: Push image to DO Container Registry with LATEST tag
         run: docker push ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:latest
+
       - name: Run any new migrations
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: npx prisma migrate deploy
+
       - name: Deploy DO app
         run: doctl apps create-deployment ${{ secrets.DIGITALOCEAN_APP_ID }} --force-rebuild
