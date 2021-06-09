@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styles from './section.module.css';
-import useViewport from '../../hooks/useViewport';
+import useViewport from 'hooks/useViewport';
 
 type SectionProps = {
   title: string;

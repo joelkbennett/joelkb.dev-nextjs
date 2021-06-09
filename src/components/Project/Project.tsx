@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import { useRecoilValue } from 'recoil';
-import { scrollPositionState } from '../../state/window';
-import useViewport from '../../hooks/useViewport';
+import { scrollPositionState } from 'state/window';
+import useViewport from 'hooks/useViewport';
 
 import styles from './project.module.css';
 

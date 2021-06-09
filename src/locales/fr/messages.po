@@ -13,10 +13,70 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: pages/404.tsx:9
+#: src/pages/404.tsx:9
 msgid "404.description"
 msgstr ""
 
-#: pages/index.tsx:49
+#: src/pages/index.tsx:75
+msgid "org.title.aids-vancouver"
+msgstr ""
+
+#: src/pages/index.tsx:91
+msgid "org.title.cbc"
+msgstr ""
+
+#: src/pages/index.tsx:63
+msgid "org.title.coup-company"
+msgstr ""
+
+#: src/pages/index.tsx:69
+msgid "org.title.overinteractive-media"
+msgstr ""
+
+#: src/pages/index.tsx:105
+msgid "org.title.pivot"
+msgstr ""
+
+#: src/pages/index.tsx:90
+msgid "org.title.telus-fund"
+msgstr ""
+
+#: src/pages/index.tsx:108
+msgid "org.title.vso"
+msgstr ""
+
+#: src/pages/index.tsx:93
+msgid "project.title.activity-challenge"
+msgstr ""
+
+#: src/pages/index.tsx:80
+msgid "project.title.bang-on"
+msgstr ""
+
+#: src/pages/index.tsx:61
 msgid "project.title.m56"
+msgstr ""
+
+#: src/pages/index.tsx:89
+msgid "project.title.story-hive"
+msgstr ""
+
+#: src/pages/index.tsx:99
+msgid "project.title.wattpad-presents-horror"
+msgstr ""
+
+#: src/pages/index.tsx:84
+msgid "section.projects.title"
+msgstr ""
+
+#: src/pages/index.tsx:56
+msgid "section.work-experience.title"
+msgstr ""
+
+#: src/pages/index.tsx:15
+msgid "site.index.title"
+msgstr ""
+
+#: src/pages/index.tsx:24
+msgid "site.meta.description"
 msgstr ""

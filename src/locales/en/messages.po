@@ -13,10 +13,70 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: pages/404.tsx:9
+#: src/pages/404.tsx:9
 msgid "404.description"
 msgstr "Not found"
 
-#: pages/index.tsx:49
+#: src/pages/index.tsx:75
+msgid "org.title.aids-vancouver"
+msgstr "AIDS Vancouver"
+
+#: src/pages/index.tsx:91
+msgid "org.title.cbc"
+msgstr "CBC"
+
+#: src/pages/index.tsx:63
+msgid "org.title.coup-company"
+msgstr "The Coup Company"
+
+#: src/pages/index.tsx:69
+msgid "org.title.overinteractive-media"
+msgstr "Overinteractive Media"
+
+#: src/pages/index.tsx:105
+msgid "org.title.pivot"
+msgstr "Pivot Legal Society"
+
+#: src/pages/index.tsx:90
+msgid "org.title.telus-fund"
+msgstr "Telus Fund"
+
+#: src/pages/index.tsx:108
+msgid "org.title.vso"
+msgstr "The Vancouver Symphony Orchestra"
+
+#: src/pages/index.tsx:93
+msgid "project.title.activity-challenge"
+msgstr "The Canada Games Activity Challenge"
+
+#: src/pages/index.tsx:80
+msgid "project.title.bang-on"
+msgstr "Bang-On"
+
+#: src/pages/index.tsx:61
 msgid "project.title.m56"
 msgstr "m56 Studios"
+
+#: src/pages/index.tsx:89
+msgid "project.title.story-hive"
+msgstr "StoryHive"
+
+#: src/pages/index.tsx:99
+msgid "project.title.wattpad-presents-horror"
+msgstr "Wattpad Presents... Horror"
+
+#: src/pages/index.tsx:84
+msgid "section.projects.title"
+msgstr "Projects Worked On"
+
+#: src/pages/index.tsx:56
+msgid "section.work-experience.title"
+msgstr "Worked For"
+
+#: src/pages/index.tsx:15
+msgid "site.index.title"
+msgstr "Joel K Bennett - Recent Work"
+
+#: src/pages/index.tsx:24
+msgid "site.meta.description"
+msgstr "Portfolio of work of Web Developer Joel K Bennett"
