@@ -47,20 +47,43 @@ export default function Home({ projects }) {
       <Section title="Worked For">
         <ul className={`list-flex`}>
           <li>{t({ id: 'project.title.m56', message: 'm56 Studios' })}</li>
-          <li>The Coup Company</li>
-          <li>Overinteractive Media</li>
-          <li>AIDS Vancouver</li>
-          <li>Bang-On</li>
+          <li>
+            {t({
+              id: 'project.title.coup-company',
+              message: 'The Coup Company',
+            })}
+          </li>
+          <li>
+            {t({
+              id: 'project.title.overinteractive-media',
+              message: 'Overinteractive Media',
+            })}
+          </li>
+          <li>
+            {t({
+              id: 'project.title.aids-vancouver',
+              message: 'AIDS Vancouver',
+            })}
+          </li>
+          <li>{t({ id: 'project.title.bang-on', message: 'Bang-On' })}</li>
         </ul>
       </Section>
       <Section title="Worked on projects for">
         <ul className={`list-flex`}>
-          <li>StoryHive</li>
-          <li>Telus Fund</li>
-          <li>CBC</li>
-          <li>The Canada Games Activity Challenge</li>
-          <li>Wattpad Presents</li>
-          <li>Pivot Legal Society (Hope in Shadows, The Pivot Foundation)</li>
+          <li>{t({ id: 'project.title.story-hive', message: 'StoryHive' })}</li>
+          <li>{t({ id: 'project.title.', message: 'Telus Fund' })}</li>
+          <li>{t({ id: 'project.title', message: 'CBC' })}</li>
+          <li>
+            {t({
+              id: 'project.title',
+              message: 'The Canada Games Activity Challenge',
+            })}
+          </li>
+          <li>{t({ id: 'project.title', message: 'Wattpad Presents' })}</li>
+          <li>
+            {t({ id: 'project.title', message: 'Pivot Legal Society' })} (Hope
+            in Shadows, The Pivot Foundation)
+          </li>
           <li>The Vancouver Symphony Orchestra</li>
         </ul>
       </Section>

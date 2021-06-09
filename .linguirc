@@ -2,7 +2,7 @@
    "locales": ["en", "fr"],
    "sourceLocale": "en",
    "catalogs": [{
-      "path": "locales/{locale}/messages",
+      "path": "src/locales/{locale}/messages",
       "include": ["<rootDir>/"],
       "exclude": ["**/node_modules/**"]
    }],
