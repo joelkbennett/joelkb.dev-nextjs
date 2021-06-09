@@ -6,3 +6,53 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
+
+enum Role {
+  USER
+  ADMIN
+}
+
+model Project {
+  id Int @default(autoincrement()) @id
+  title String @db.VarChar(255)
+  startedAt DateTime @map(name: "started_at")
+  endedAt DateTime @map(name: "ended_at")
+  createdAt DateTime @default(now()) @map(name: "created_at")
+  updatedAt DateTime @default(now()) @map(name: "updated_at")
+  deletedAt DateTime @map(name: "deleted_at")
+
+  @@map(name: "projects")
+}
+
+model Position {
+  id Int @default(autoincrement()) @id
+  position String @db.VarChar(255)
+  employer String @db.VarChar(255)
+  startedAt DateTime @map(name: "started_at")
+  endedAt DateTime @map(name: "ended_at")
+  createdAt DateTime @default(now()) @map(name: "created_at")
+  updatedAt DateTime @default(now()) @map(name: "updated_at")
+  deletedAt DateTime @map(name: "deleted_at")
+
+  @@map(name: "positions")
+}
+
+model Skill {
+  id Int @default(autoincrement()) @id
+  name String @db.VarChar(255)
+  level String @db.VarChar(255)
+  createdAt DateTime @default(now()) @map(name: "created_at")
+  updatedAt DateTime @default(now()) @map(name: "updated_at")
+  deletedAt DateTime @map(name: "deleted_at")
+
+  @@map(name: "skills")
+}
+
+model Resume {
+  id Int @default(autoincrement()) @id
+  createdAt DateTime @default(now()) @map(name: "created_at")
+  updatedAt DateTime @default(now()) @map(name: "updated_at")
+  deletedAt DateTime @map(name: "deleted_at")
+
+  @@map(name: "resumes")
+}
