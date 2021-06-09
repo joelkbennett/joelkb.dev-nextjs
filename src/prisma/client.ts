@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import softDeleteFilter from 'prisma/middleware/softDeleteFilter';
+import softDeleteFilter from './middleware/softDeleteFilter';
 
 // add prisma to the NodeJS global type
 interface CustomNodeJsGlobal extends NodeJS.Global {
