@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import Layout from 'components/Layout/Layout';
-import { getAllProjects } from 'lib/projects';
+import Layout from '@components/Layout/Layout';
+import { getAllProjects } from '@lib/projects';
 import Link from 'next/link';
-import Section from 'components/Section/Section';
-import ProjectList from 'components/ProjectList/ProjectList';
-import SkillList from 'components/SkillList/SkillList';
+import Section from '@components/Section/Section';
+import ProjectList from '@components/ProjectList/ProjectList';
+import SkillList from '@components/SkillList/SkillList';
 import { t } from '@lingui/macro';
 
 export default function Home({ projects }) {
@@ -52,6 +52,7 @@ export default function Home({ projects }) {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <ProjectList projects={projects} />
+
       <Section
         title={t({
           id: 'section.work-experience.title',
@@ -80,6 +81,7 @@ export default function Home({ projects }) {
           <li>{t({ id: 'project.title.bang-on', message: 'Bang-On' })}</li>
         </ul>
       </Section>
+
       <Section
         title={t({
           id: 'section.projects.title',

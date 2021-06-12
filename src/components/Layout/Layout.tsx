@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Head from 'next/head';
 import styles from './layout.module.css';
-import SiteHeader from 'components/SiteHeader/SiteHeader';
-import SiteFooter from 'components/SiteFooter/SiteFooter';
+import SiteHeader from '@components/SiteHeader/SiteHeader';
+import SiteFooter from '@components/SiteFooter/SiteFooter';
 
 import { useSetRecoilState } from 'recoil';
-import * as Window from 'state/window';
+import * as Window from '@state/window';
 
 export default function Layout({ children }: React.PropsWithChildren<{}>) {
   const setScrollState = useSetRecoilState(Window.scrollPositionState);

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Project, { ProjectProps } from 'components/Project/Project';
-import Section from 'components/Section/Section';
+import Project, { ProjectProps } from '@components/Project/Project';
+import Section from '@components/Section/Section';
 import styles from './projectList.module.css';
 
 export default function ProjectList({

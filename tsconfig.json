@@ -17,7 +17,31 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": "./src"
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@enum/*": [
+        "./src/enum/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@lib/*": [
+        "./src/lib/*"
+      ],
+      "@locales/*": [
+        "./src/locales/*"
+      ],
+      "@prisma/*": [
+        "./src/prisma/*"
+      ],
+      "@state/*": [
+        "./src/state/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+    }
   },
   "include": [
     "next-env.d.ts",

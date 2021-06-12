@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import { useRecoilValue } from 'recoil';
-import { scrollPositionState } from 'state/window';
-import useViewport from 'hooks/useViewport';
+import { scrollPositionState } from '@state/window';
+import useViewport from '@hooks/useViewport';
 
 import styles from './project.module.css';
 
@@ -32,10 +32,10 @@ export default function Project({
   title,
   description,
   links,
-  images,
+  // images,
   techStack,
   body,
-}: React.PropsWithChildren<ProjectProps>) {
+}: React.PropsWithChildren<ProjectProps>): JSX.Element {
   const projectRef = React.useRef(null);
   const [projectState, setProjectState] = React.useState(ProjectState.Upcoming);
   const { position } = useRecoilValue(scrollPositionState);

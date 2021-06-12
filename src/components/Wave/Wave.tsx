@@ -1,5 +1,5 @@
 import * as React from 'react';
-import useWave from 'hooks/useWave';
+import useWave from '@hooks/useWave';
 
 export default function Wave() {
   const wave = useWave();

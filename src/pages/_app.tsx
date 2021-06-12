@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app';
 // import { Provider } from 'next-auth/client';
 import { SWRConfig } from 'swr';
-import LocalizationProvider from 'locales/localizationProvider';
+import LocalizationProvider from '@locales/localizationProvider';
 import { RecoilRoot } from 'recoil';
 
 import '../styles/global.css';

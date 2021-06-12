@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Section from 'components/Section/Section';
+import Section from '@components/Section/Section';
 import styles from './WorkExperienceList.module.css';
 
 export default function WorkExperienceList() {
