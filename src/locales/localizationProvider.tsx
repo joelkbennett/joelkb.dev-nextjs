@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { i18n } from '@lingui/core';
 import { I18nProvider } from '@lingui/react';
-import { messages } from 'locales/en/messages';
+import { messages } from '@locales/en/messages';
 import { en } from 'make-plural';
 
 i18n.loadLocaleData('en', { plurals: en });

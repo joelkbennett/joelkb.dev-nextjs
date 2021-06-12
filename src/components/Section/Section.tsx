@@ -1,24 +1,23 @@
 import * as React from 'react';
 import styles from './section.module.css';
-import useViewport from 'hooks/useViewport';
 
 type SectionProps = {
+  children: React.ReactNode;
   title: string;
-  fullHeight?: boolean;
+  accessibleLabel?: string;
   className?: string;
 };
 
 export default function Section({
-  title,
-  fullHeight = false,
   children,
+  title,
+  accessibleLabel,
   className = '',
-}: React.PropsWithChildren<SectionProps>) {
-  const { height } = useViewport();
+}: SectionProps): JSX.Element {
   return (
     <section
       className={`${styles.wrapper} ${className}`}
-      style={{ height: fullHeight ? height : 'auto' }}>
+      aria-label={accessibleLabel || title}>
       <div className={`${styles.column}`}>
         <h2>{title}</h2>
       </div>

@@ -1,5 +1,5 @@
 import { useRecoilValue } from 'recoil';
-import * as Window from 'state/window';
+import * as Window from '@state/window';
 
 enum Orientation {
   Portrait = 'Portrait',

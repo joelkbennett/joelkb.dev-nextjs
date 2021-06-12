@@ -1,0 +1,19 @@
+name: Run Tests
+
+on:
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+
+      - name: Install modules
+        run: yarn
+
+      - name: Run tests
+        run: yarn test
