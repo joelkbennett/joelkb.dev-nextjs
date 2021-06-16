@@ -32,8 +32,8 @@
       "@locales/*": [
         "./src/locales/*"
       ],
-      "@prisma/*": [
-        "./src/prisma/*"
+      "@db/*": [
+        "src/db/*"
       ],
       "@state/*": [
         "./src/state/*"
