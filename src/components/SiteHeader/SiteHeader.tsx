@@ -20,15 +20,22 @@ export default function SiteHeader() {
         </h1>
 
         <section className={styles.links}>
-          <a href="https://www.github.com/joelkbennett" target="_blank">
+          <a
+            href="https://www.github.com/joelkbennett"
+            target="_blank"
+            rel="noopener noreferrer">
             {t({ id: 'link.github.title', message: 'Github' })}
           </a>
-          <a href="https://www.twitter.com/j0benk0" target="_blank">
+          <a
+            href="https://www.twitter.com/j0benk0"
+            target="_blank"
+            rel="noopener noreferrer">
             {t({ id: 'link.twitter.title', message: 'Twitter' })}
           </a>
           <a
             href="https://www.notion.so/joelkb/Joel-Kristopher-Bennett-0bd43f07673047e38d871fab21dd992d"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             {t({ id: 'link.resume.title', message: 'Resume' })}
           </a>
         </section>
