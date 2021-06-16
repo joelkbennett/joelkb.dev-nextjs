@@ -21,7 +21,7 @@ jobs:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
 
       - name: Log in to Digital Ocean Container Registry
-        run: doctl registry login --expiry-seconds 600
+        run: doctl registry login --expiry-seconds 3600
 
       - name: Push image to DO Container Registry with unique tag
         run: docker push ${{ secrets.DIGITALOCEAN_REPO }}${{ secrets.PROJECT_NAME }}:${{ github.sha }}
