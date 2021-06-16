@@ -15,7 +15,7 @@
     "lingui:clean": "lingui extract --clean --overwrite && lingui compile"
   },
   "prisma": {
-    "schema": "src/prisma/schema.prisma"
+    "schema": "src/db/schema.prisma"
   },
   "husky": {
     "hooks": {

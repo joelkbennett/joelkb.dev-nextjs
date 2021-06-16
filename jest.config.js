@@ -6,7 +6,7 @@ module.exports = {
     '@hooks/(.*)': '<rootDir>/src/hooks/$1',
     '@lib/(.*)': '<rootDir>/src/lib/$1',
     '@locales/(.*)': '<rootDir>/src/locales/$1',
-    '@prisma/(.*)': '<rootDir>/src/prisma/$1',
+    '@db/(.*)': '<rootDir>/src/db/$1',
     '@state/(.*)': '<rootDir>/src/state/$1',
     '@styles/(.*)': '<rootDir>/src/styles/$1',
     // '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
