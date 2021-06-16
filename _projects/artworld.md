@@ -1,7 +1,7 @@
 ---
 title: "Artworld"
-description: "An app built for the arts sector."
-techStack: ['React Native', 'Redux', 'Firebase', 'Fastlane']
+description: "\"Built for the arts sector\""
+techStack: ['React Native', 'Redux', 'Firebase', 'Fastlane', 'Algolia']
 links:
     - title: 'artworld.app'
       url: 'https://artworld.app'
@@ -14,4 +14,4 @@ images:
     url: ''
 ---
 
-Originally funded by the Canada Council for the Arts, and currently on hold.
+Artworld's vision is to create a platform that fosters connection amongst our peers, friends, and publics. Funded by the Canada Council for the Arts.

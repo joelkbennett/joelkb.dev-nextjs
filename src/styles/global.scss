@@ -44,7 +44,7 @@ h2 {
   font-size: 1.25rem;
   display: inline-block;
   border-bottom: thin solid #ddd;
-  margin: 0 0 2em 0;
+  margin: 0 0 .5rem 0;
   padding: 0;
 }
 
@@ -81,7 +81,15 @@ ul.list-flex {
 ul.list-flex li {
     display: inline-block;
     flex: 0 1 250px;
-    margin: 0 2em 1em 0;
+    margin: 0 2em 2em 0;
+}
+
+li > .list-item--description {
+  color: #888;
+  &:before {
+    content: "+ ";
+    margin-left: -1rem;
+  }
 }
 
 /* 

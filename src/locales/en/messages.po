@@ -17,61 +17,65 @@ msgstr ""
 msgid "404.description"
 msgstr "Not found"
 
-#: src/pages/index.tsx:75
+#: src/pages/index.tsx:76
 msgid "org.title.aids-vancouver"
 msgstr "AIDS Vancouver"
 
-#: src/pages/index.tsx:91
+#: src/pages/index.tsx:93
 msgid "org.title.cbc"
-msgstr "CBC"
+msgstr "CBC's Podium Pursuit"
 
-#: src/pages/index.tsx:63
+#: src/pages/index.tsx:64
 msgid "org.title.coup-company"
 msgstr "The Coup Company"
 
-#: src/pages/index.tsx:69
+#: src/pages/index.tsx:70
 msgid "org.title.overinteractive-media"
 msgstr "Overinteractive Media"
 
-#: src/pages/index.tsx:105
+#: src/pages/index.tsx:107
 msgid "org.title.pivot"
 msgstr "Pivot Legal Society"
 
-#: src/pages/index.tsx:90
+#: src/pages/index.tsx:92
 msgid "org.title.telus-fund"
-msgstr "Telus Fund"
+msgstr "Telus Fund's Stories for Caregivers"
 
-#: src/pages/index.tsx:108
+#: src/pages/index.tsx:110
 msgid "org.title.vso"
-msgstr "The Vancouver Symphony Orchestra"
+msgstr "The VSO Lottery"
 
-#: src/pages/index.tsx:93
+#: src/pages/index.tsx:95
 msgid "project.title.activity-challenge"
 msgstr "The Canada Games Activity Challenge"
 
-#: src/pages/index.tsx:80
+#: src/pages/index.tsx:81
 msgid "project.title.bang-on"
 msgstr "Bang-On"
 
-#: src/pages/index.tsx:61
+#: src/pages/index.tsx:62
 msgid "project.title.m56"
 msgstr "m56 Studios"
 
-#: src/pages/index.tsx:89
+#: src/pages/index.tsx:91
 msgid "project.title.story-hive"
-msgstr "StoryHive"
+msgstr "StoryHive by Telus"
 
-#: src/pages/index.tsx:99
+#: src/pages/index.tsx:101
 msgid "project.title.wattpad-presents-horror"
 msgstr "Wattpad Presents... Horror"
 
-#: src/pages/index.tsx:84
+#: src/pages/index.tsx:86
 msgid "section.projects.title"
-msgstr "Projects Worked On"
+msgstr "Additional Projects Worked On:"
 
-#: src/pages/index.tsx:56
+#: src/components/SkillList/SkillList.tsx:9
+msgid "section.skills.title "
+msgstr "Professional Expertise in:"
+
+#: src/pages/index.tsx:57
 msgid "section.work-experience.title"
-msgstr "Worked For"
+msgstr "Software Developer at:"
 
 #: src/pages/index.tsx:15
 msgid "site.index.title"
@@ -80,3 +84,23 @@ msgstr "Joel K Bennett - Recent Work"
 #: src/pages/index.tsx:24
 msgid "site.meta.description"
 msgstr "Portfolio of work of Web Developer Joel K Bennett"
+
+#: src/components/SkillList/SkillList.tsx:26
+msgid "skill.html.title"
+msgstr "CSS/HTML"
+
+#: src/components/SkillList/SkillList.tsx:15
+msgid "skill.js.title"
+msgstr "Javascript/Typescript"
+
+#: src/components/SkillList/SkillList.tsx:19
+msgid "skill.react.title"
+msgstr "React/React Native"
+
+#: src/components/SkillList/SkillList.tsx:30
+msgid "skill.uiux.title"
+msgstr "UI/UX Design"
+
+#: src/components/SkillList/SkillList.tsx:36
+msgid "skill.unity.title"
+msgstr "Unity/C#"

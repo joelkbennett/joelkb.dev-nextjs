@@ -4,7 +4,7 @@ import { SWRConfig } from 'swr';
 import LocalizationProvider from '@locales/localizationProvider';
 import { RecoilRoot } from 'recoil';
 
-import '../styles/global.css';
+import '../styles/global.scss';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

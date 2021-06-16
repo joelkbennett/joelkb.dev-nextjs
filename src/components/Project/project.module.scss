@@ -28,6 +28,11 @@
   z-index: 1;
 }
 
+.subhead {
+  max-width: 80ch;
+  margin-bottom: 1rem;
+}
+
 .description {
   display: block;
   padding: 2px 0 3px 0;
@@ -46,5 +51,14 @@
 }
 
 .links, .stack {
+  display: block;
   margin-bottom: 1rem;
+  color: #888;
+}
+
+.stack {
+  &:before {
+    content: "+ ";
+    margin-left: -1rem;
+  }
 }

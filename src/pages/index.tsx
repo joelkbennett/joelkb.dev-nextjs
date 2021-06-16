@@ -59,26 +59,42 @@ export default function Home({ projects }) {
           message: 'Worked For',
         })}>
         <ul className={`list-flex`}>
-          <li>{t({ id: 'project.title.m56', message: 'm56 Studios' })}</li>
           <li>
-            {t({
-              id: 'org.title.coup-company',
-              message: 'The Coup Company',
-            })}
+            {t({ id: 'project.title.m56', message: 'm56 Studios' })}
+            <div className={`list-item--description`}>
+              Frontend Developer for Web, Mobile, and Games
+            </div>
           </li>
           <li>
             {t({
               id: 'org.title.overinteractive-media',
-              message: 'Overinteractive Media',
+              message: 'Overinteractive Media/The Coup Company',
             })}
+            <div className={`list-item--description`}>
+              Frontend Web Developer
+            </div>
           </li>
           <li>
             {t({
               id: 'org.title.aids-vancouver',
               message: 'AIDS Vancouver',
             })}
+            <div className={`list-item--description`}>
+              Website Coordinator/Developer
+            </div>
           </li>
-          <li>{t({ id: 'project.title.bang-on', message: 'Bang-On' })}</li>
+          <li>
+            {t({ id: 'or.title.e11', message: 'e11' })}
+            <div className={`list-item--description`}>
+              Self-employed Web Developer & Graphic Designer
+            </div>
+          </li>
+          <li>
+            {t({ id: 'project.title.bang-on', message: 'Bang-On' })}
+            <div className={`list-item--description`}>
+              Graphic Designer and Web Developer
+            </div>
+          </li>
         </ul>
       </Section>
 
@@ -88,29 +104,57 @@ export default function Home({ projects }) {
           message: 'Projects Worked On',
         })}>
         <ul className={`list-flex`}>
-          <li>{t({ id: 'project.title.story-hive', message: 'StoryHive' })}</li>
-          <li>{t({ id: 'org.title.telus-fund', message: 'Telus Fund' })}</li>
-          <li>{t({ id: 'org.title.cbc', message: 'CBC' })}</li>
+          <li>
+            {t({ id: 'project.title.story-hive', message: 'StoryHive' })}
+            <div className={`list-item--description`}>
+              PHP, Javascript, HTML/SCSS
+            </div>
+          </li>
+          <li>
+            {t({ id: 'org.title.telus-fund', message: 'Telus Fund' })}
+            <div className={`list-item--description`}>
+              Prototype development, Laravel/Blade/PHP, Javascript, HTML/SCSS
+            </div>
+          </li>
+          <li>
+            {t({ id: 'org.title.cbc', message: 'CBC' })}
+            <div className={`list-item--description`}>
+              PHP, Javascript, HTML/SCSS
+            </div>
+          </li>
           <li>
             {t({
               id: 'project.title.activity-challenge',
               message: 'The Canada Games Activity Challenge',
             })}
+            <div className={`list-item--description`}>
+              Javascript, HTML, SCSS
+            </div>
           </li>
           <li>
             {t({
               id: 'project.title.wattpad-presents-horror',
               message: 'Wattpad Presents... Horror',
             })}
+            <div className={`list-item--description`}>
+              UI Design, Javascript, HTML/SCSS
+            </div>
           </li>
           <li>
             {t({ id: 'org.title.pivot', message: 'Pivot Legal Society' })}
+            <div className={`list-item--description`}>
+              Graphic design for print & web, Drupal & NationBuilder template
+              development
+            </div>
           </li>
           <li>
             {t({
               id: 'org.title.vso',
               message: 'The Vancouver Symphony Orchestra',
             })}
+            <div className={`list-item--description`}>
+              Graphic design for print & web, HTML/CSS
+            </div>
           </li>
         </ul>
       </Section>

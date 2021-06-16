@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './siteHeader.module.css';
+import styles from './siteHeader.module.scss';
 import Wave from '@components/Wave/Wave';
 import useViewport from '@hooks/useViewport';
 
@@ -8,9 +8,6 @@ export default function SiteHeader() {
 
   return (
     <header className={styles.wrapper} style={{ height: height || 1080 }}>
-      <div className={styles.wave}>
-        <Wave />
-      </div>
       <div className={`${styles.inner}`}>
         <h1>
           Joel K Bennett
@@ -22,8 +19,21 @@ export default function SiteHeader() {
         </h1>
 
         <section className={styles.links}>
-          <a href="https://www.github.com/joelkbennett">github</a>
+          <a href="https://www.github.com/joelkbennett" target="_blank">
+            Github
+          </a>
+          <a href="https://www.twitter.com/j0benk0" target="_blank">
+            Twitter
+          </a>
+          <a
+            href="https://www.notion.so/joelkb/Joel-Kristopher-Bennett-0bd43f07673047e38d871fab21dd992d"
+            target="_blank">
+            Resume
+          </a>
         </section>
+      </div>
+      <div className={styles.wave}>
+        <Wave />
       </div>
     </header>
   );

@@ -4,7 +4,7 @@ import { useRecoilValue } from 'recoil';
 import { scrollPositionState } from '@state/window';
 import useViewport from '@hooks/useViewport';
 
-import styles from './project.module.css';
+import styles from './project.module.scss';
 
 type Asset = {
   title: string;
@@ -107,7 +107,7 @@ export default function Project({
           <header>
             <h2>{title}</h2>
             <div>
-              <h3 className={styles.descriptionWrapper}>{description}</h3>
+              <h3 className={styles.subhead}>{description}</h3>
             </div>
           </header>
           <section className={styles.body}>

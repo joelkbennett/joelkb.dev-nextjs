@@ -12,7 +12,7 @@
     "test:watch": "jest --watch",
     "lingui:extract": "lingui extract",
     "lingui:compile": "lingui compile",
-    "lingui": "lingui extract --clean --overwrite && lingui compile"
+    "lingui:clean": "lingui extract --clean --overwrite && lingui compile"
   },
   "prisma": {
     "schema": "src/prisma/schema.prisma"
