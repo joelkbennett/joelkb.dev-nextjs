@@ -3,6 +3,7 @@ import styles from './siteHeader.module.scss';
 import Wave from '@components/Wave/Wave';
 import useViewport from '@hooks/useViewport';
 import { t } from '@lingui/macro';
+import ExternalLink from '@components/ExternalLink/ExternalLink';
 
 export default function SiteHeader() {
   const { height } = useViewport();
@@ -20,24 +21,17 @@ export default function SiteHeader() {
         </h1>
 
         <section className={styles.links}>
-          <a
-            href="https://www.github.com/joelkbennett"
-            target="_blank"
-            rel="noopener noreferrer">
+          <ExternalLink href="https://www.github.com/joelkbennett">
             {t({ id: 'link.github.title', message: 'Github' })}
-          </a>
-          <a
-            href="https://www.twitter.com/j0benk0"
-            target="_blank"
-            rel="noopener noreferrer">
+          </ExternalLink>
+
+          <ExternalLink href="https://www.twitter.com/j0benk0">
             {t({ id: 'link.twitter.title', message: 'Twitter' })}
-          </a>
-          <a
-            href="https://www.notion.so/joelkb/Joel-Kristopher-Bennett-0bd43f07673047e38d871fab21dd992d"
-            target="_blank"
-            rel="noopener noreferrer">
+          </ExternalLink>
+
+          <ExternalLink href="https://www.notion.so/joelkb/Joel-Kristopher-Bennett-0bd43f07673047e38d871fab21dd992d">
             {t({ id: 'link.resume.title', message: 'Resume' })}
-          </a>
+          </ExternalLink>
         </section>
       </div>
       <div className={styles.wave}>
