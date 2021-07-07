@@ -56,3 +56,14 @@ model Resume {
 
   @@map(name: "resumes")
 }
+
+model Analytic {
+  id String @id
+  name String @db.VarChar(128)
+  startTime Float @map(name: "start_time")
+  value Float
+  label String
+  createdAt DateTime @default(now()) @map(name: "created_at")
+
+  @@map(name: "Analytics")
+}
