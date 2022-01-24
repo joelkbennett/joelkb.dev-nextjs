@@ -14,7 +14,7 @@ export default function SiteHeader() {
         <h1>
           Joel K Bennett
           <br />
-          UX/UI design, React/React Native, Unity
+          React/React Native, Unity, UX/UI design
           <br />
           Vancouver BC
           <br />
@@ -25,11 +25,11 @@ export default function SiteHeader() {
             {t({ id: 'link.github.title', message: 'Github' })}
           </ExternalLink>
 
-          <ExternalLink href="https://www.twitter.com/j0benk0">
+          {/* <ExternalLink href="https://www.twitter.com/j0benk0">
             {t({ id: 'link.twitter.title', message: 'Twitter' })}
-          </ExternalLink>
+          </ExternalLink> */}
 
-          <ExternalLink href="https://www.notion.so/joelkb/Joel-Kristopher-Bennett-0bd43f07673047e38d871fab21dd992d">
+          <ExternalLink href="https://joelkb.notion.site/Joel-Kristopher-Bennett-38915aa47b5046afa7db24c644d15c3d">
             {t({ id: 'link.resume.title', message: 'Resume' })}
           </ExternalLink>
         </section>

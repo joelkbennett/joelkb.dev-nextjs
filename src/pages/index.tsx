@@ -60,6 +60,12 @@ export default function Home({ projects }) {
         })}>
         <ul className={`list-flex`}>
           <li>
+            {t({ id: 'project.title.ahi', message: 'Anemone Hug Interactive' })}
+            <div className={`list-item--description`}>
+              Software Developer/Programmer
+            </div>
+          </li>
+          <li>
             {t({ id: 'project.title.m56', message: 'm56 Studios' })}
             <div className={`list-item--description`}>
               Frontend Developer for Web, Mobile, and Games
